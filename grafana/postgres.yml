@@ -1,0 +1,16 @@
+apiVersion: 1
+
+datasources:
+- name: PostgreSQL
+  type: postgres
+  url: postgres:5432
+  access: proxy
+  password: admin
+  user: admin
+  database: test
+  basicAuth: false
+  isDefault: true
+  jsonData:
+     sslmode: disable
+  version: 1
+  editable: true
